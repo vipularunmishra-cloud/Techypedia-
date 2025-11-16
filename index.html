@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Techpedia — Comprehensive CS Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Techpedia</div>
+    <div class="tag">Computer Science • Hardware • Software • AI</div>
+  </header>
+
+  <div class="app">
+    <aside class="sidebar">
+      <div class="search-wrap">
+        <input id="search" placeholder="Search topics..." autocomplete="off">
+      </div>
+      <ul id="topicsList"></ul>
+      <div class="footer-note">Built for learning • Aesthetic UI</div>
+    </aside>
+
+    <main class="main-content">
+      <div id="contentCard" class="card intro">
+        <h1>Welcome to Techpedia</h1>
+        <p>Choose a topic from the left to open an advanced, textbook-style explanation. Pages open in a smooth modal with animations for distraction-free reading.</p>
+      </div>
+    </main>
+  </div>
+
+  <!-- Modal / Popup -->
+  <div id="modalBg" class="modal-bg" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <button id="closeBtn" class="close-btn" aria-label="Close">✕</button>
+      <div id="modalContent" class="modal-content"></div>
+      <div class="modal-nav">
+        <button id="prevBtn" class="nav-btn">◀ Prev</button>
+        <button id="nextBtn" class="nav-btn">Next ▶</button>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
